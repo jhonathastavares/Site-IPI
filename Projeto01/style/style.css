@@ -1,0 +1,50 @@
+@charset "UTF -8";
+
+:root {
+    --cor0: #6bc478fb;
+    --cor1: #2cbe5898;
+    --cor2: #0d7431;
+    --cor3: #014720;
+    --cor4: #022b14;
+
+    --font-padrao: lucida, sans-serif;
+    --font-destaque: lucida;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--font-destaque);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+}
+
+nav {
+    background-color: var(--cor4);
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+    
+}
+main img {
+    padding-top: 10px;
+    margin: auto;
+    width: 60%;
+}

@@ -3,9 +3,9 @@
 :root {
     --cor0: #6bc478fb;
     --cor1: #2cbe5898;
-    --cor2: #0d7431;
-    --cor3: #014720;
-    --cor4: #022b14;
+    --cor2: #02832f;
+    --cor3: #012e15;
+    --cor4: #00180a;
 
     --font-padrao: lucida, sans-serif;
     --font-destaque: lucida;
@@ -15,19 +15,15 @@
     margin: 0px;
     padding: 0px;
 }
-
-body {
-    background-color: var(--cor0);
-    font-family: var(--font-destaque);
-}
-
 header {
-    background-image: linear-gradient(to bottom, var(--cor1),var(--cor4));
-    min-height: 150px;
+    font-family: var(--font-destaque);
+    background-image: linear-gradient(var(--cor2),var(--cor4));
     text-align: center;
-    padding-top: 40px;
+    padding: 50px;
 }
-
+header.logo {
+    background-position: left top;
+}
 header h1 {
     color: white;
     font-family: var(--font-destaque);

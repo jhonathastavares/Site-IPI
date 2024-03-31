@@ -19,7 +19,7 @@ header {
     font-family: var(--font-destaque);
     background-image: linear-gradient(var(--cor2),var(--cor4));
     text-align: center;
-    padding: 50px;
+    padding: 40px;
 }
 
 header h1 {
@@ -31,12 +31,23 @@ header h1 {
 }
 
 nav {
+    background-color: #00180a;
+    padding-bottom: 5PX;
+}
+
+nav > a {
     background-color: var(--cor4);
     color: white;
+    padding-bottom: 5px;
+    padding-left: 10px;
     text-decoration: none;
-    padding-bottom: 10px;
-    
 }
+
+.social a {
+    background-position: right;
+
+}
+
 main img {
     padding-top: 10px;
     margin: auto;

@@ -21,9 +21,7 @@ header {
     text-align: center;
     padding: 50px;
 }
-header.logo {
-    background-position: left top;
-}
+
 header h1 {
     color: white;
     font-family: var(--font-destaque);

@@ -1,19 +1,26 @@
 @charset "UTF -8";
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Inter:wght@100..900&display=swap');
 
-
+:root {
+    --cor0: #8ec596;
+    --cor1: #02772b;
+    --cor2: #023619;
+    --cor3: #000000;
+}
 *{
     margin: 0px;
     padding: 0px;  
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+
 body {
-    background-color: #94df8d59;
+    background-image: linear-gradient(var(--cor3) 10%,var(--cor1),black);
 }
 .conteiner{
     max-width: 1080px;  
-    margin:0 auto ;
+    margin:auto ;
     display: flex;  
     align-items: center;
     justify-content: center;
@@ -31,7 +38,8 @@ header{
     cursor: pointer;
 }
 .menu {
-    width: 50%;
+    width: 100%;
+    text-align: center;
 }
 .menu nav a{
     color: white;
@@ -57,8 +65,41 @@ header{
     cursor:pointer;
     width: 35px;
 }
-.banner img{
-    max-width: 80vw;
-    max-height: 80vw;
-    
+main {
+    background-color:var(--cor0); 
+    min-width: 580px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main img{
+    width: 100%;
+    border: auto;
+}
+div.video {
+    background-color:var(--cor0);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+footer {
+    background-color:var(--cor2) ;
+    color:white;
+    font-size: 8px;
+    text-align: center;
+    background-color: #000000;
+    height: 100px;
+    width: auto;
 }

@@ -69,3 +69,17 @@ header section {
     width: 32px;
     height: 32px;
 }
+.home-container {
+    background: url('imagens/banner.jpg');
+    height: 100vh;
+    background-position: center;
+    padding-top: 10px;
+}
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.btn:hover {
+    letter-spacing: 0.1rem;
+}

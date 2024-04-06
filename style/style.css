@@ -70,7 +70,7 @@ header section {
     height: 32px;
 }
 .home-container {
-    background: url('../imagens/banner.jpg');
+    background: url('../assets/images/banner.jpg');
     height: 99vh;
     background-position: center;
     padding-top: 10px;

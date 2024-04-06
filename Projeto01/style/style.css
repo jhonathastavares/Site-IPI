@@ -1,105 +1,71 @@
-@charset "UTF -8";
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --cor0: #8ec596;
-    --cor1: #02772b;
-    --cor2: #023619;
-    --cor3: #000000;
+    --mais-color: #02772b;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.2rem solid rgba(255,255,255,0.3);   
+    font-size:9px;
 }
 *{
     margin: 0px;
     padding: 0px;  
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-}
-
-
-body {
-    background-image: linear-gradient(var(--cor3) 10%,var(--cor1),black);
-}
-.conteiner{
-    max-width: 1080px;  
-    margin:auto ;
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-}
-header{
-    background-color: black;
-    width: 100%;
-    padding: 10px;
-}
-.logo,.sociais{
-    width: 25%;
-}
-.logo img{
-    width: 200px;
-    cursor: pointer;
-}
-.menu {
-    width: 100%;
-    text-align: center;
-}
-.menu nav a{
-    color: white;
+    outline: none;
+    border: none;
     text-decoration: none;
-    padding-right: 50px;
-    font-size: 12px;
-    position: relative;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
 }
-.menu nav a::after{
-    content:" ";
-    width: 0px;
-    height: 4px;
-    background-image: linear-gradient(#00bb38d5, #012b0df6);
-    position: absolute;
-    top: 20px;
+body {
+    background-color: #02250ec7;
+}
+section{
+    padding: 3erm 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+header {
+    position: fixed;
+    top: 0;
     left: 0;
-    transition: 0.4s;
+    right: 0;
+    z-index: 99;
+    background-color: #000a04;
+    border-bottom: var(--border);
 }
-.menu nav a:hover::after{
-    width: 30px;
-} 
-.sociais a img{
-    cursor:pointer;
-    width: 35px;
+.header {
+    position:fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
 }
-main {
-    background-color:var(--cor0); 
-    min-width: 580px;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 30px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
-main img{
-    width: 100%;
-    border: auto;
+.navba a {
+    margin: 0 1.5rem;
+    font-size: 1.5rem;
+    color: white;
 }
-div.video {
-    background-color:var(--cor0);
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
-    padding-bottom: 57%;
-    position: relative;
+.navba a:hover {
+    color: var(--mais-color);
+    border-bottom: 0.1rem solid var(--mais-color);
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
 }
-div.video > iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+.icons img {
+    margin: 0.6rem;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
 }
-footer {
-    background-color:var(--cor2) ;
-    color:white;
-    font-size: 8px;
-    text-align: center;
-    background-color: #000000;
-    height: 100px;
-    width: auto;
+.icons img:hover {
+    width: 32px;
+    height: 32px;
 }

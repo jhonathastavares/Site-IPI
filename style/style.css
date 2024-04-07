@@ -54,9 +54,11 @@ header section {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-.navba {
-    
-}
+/**#burguer {
+    color: white;
+    display: block;
+    text-align: center;
+}**/
 .navba a {
     margin: 0 1.8rem;
     font-size: 1.5rem;

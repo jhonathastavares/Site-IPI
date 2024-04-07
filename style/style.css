@@ -40,6 +40,12 @@ header {
     left: 0;
     right: 0;
     z-index: 99;
+    min-width: 300px;
+    max-width: 1470px;
+    margin: auto;
+}
+.header img {
+    width: 100%;
 }
 header section {
     display: flex;
@@ -47,6 +53,9 @@ header section {
     justify-content: space-between;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+}
+.navba {
+    
 }
 .navba a {
     margin: 0 1.8rem;

@@ -18,7 +18,7 @@
     font-family: "Roboto", sans-serif;
 }
 body {
-    background-color: #02250ec7;
+    background-color: white;
 }
 section{
     padding: 3erm 2rem;
@@ -31,7 +31,7 @@ header {
     left: 0;
     right: 0;
     z-index: 99;
-    background-color: #000a04;
+    background-color: #000a04ea;
     border-bottom: var(--border);
 }
 .header {

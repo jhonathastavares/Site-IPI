@@ -18,7 +18,7 @@
 .header {
     height: auto;
     position: fixed;
-    background-color: #010103cb;
+    background-color: #010103de;
     padding-bottom: 1rem;
     display: inline;
     justify-content: space-between;
@@ -39,7 +39,7 @@
 .header-item a:hover {
     color: var(--mais-color);
     padding-bottom: 0rem;
-    font-size: 1.1rem;
+    /*font-size: 1.1rem;*/
     box-sizing: border-box;
 }
 .page {

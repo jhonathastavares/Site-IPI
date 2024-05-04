@@ -17,13 +17,11 @@
 }
 
 .page {
-    background-color: rgb(255, 255, 255);
+    background-color: black; 
     display: flex;
     flex-direction: column;
 }
 .header {
-    height: auto;
-    position: fixed;
     background-color: #010103de;
     padding-bottom: 1rem;
     flex: 1;
@@ -58,39 +56,69 @@
 .content {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 0px 20px;
 }
 
-.home {
-    background-color: red;
+.content-item {
     display: flex;
     flex-direction: column;
+    min-width: 100%;
     padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.content-title {
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 .about {
-    background-color: green;
     display: flex;
     flex-direction: column;
 }
 
-.about-title {
+.content-title h2{
     flex: 1;
-    min-width: 100%
+    min-width: 100%;
+    margin: 0 auto;
 }
 
-.about-content {
+.content-info {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    min-width: 100%;
+    justify-content: space-around;
 }
 
 .about-image {
-    flex: 1
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .about-text {
-    flex: 1
+    flex: 1;
+    text-align: justify;
+}
+
+.word-image {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.box-live {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100%;
+    gap: 20px;
 }
 
 @media (max-width: 900px) {
@@ -98,7 +126,7 @@
         flex-direction: column;
     }
 
-    .about-content {
+    .content-info {
         flex-direction: column;
     }
 }

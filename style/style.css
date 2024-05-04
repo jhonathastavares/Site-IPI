@@ -47,10 +47,13 @@
     box-sizing: border-box;
 }
 .header-item a:hover {
-    color: var(--mais-color);
+    color:rgb(255, 196, 108);
     padding-bottom: 0rem;
     font-size: 1.05rem;
     box-sizing: border-box;
+}
+.navbar {
+    background-color: #010103de;
 }
 .content {
     display: flex;
